@@ -21,12 +21,14 @@ while 'n' != input
     puts "Would you like to flip the coin again? (y/n)"
     input = gets.chomp
     
-    if 'n' != input.downcase
+    if 'y' == input.downcase
         #yes > flip
         flipCoin()
-    else
+    elsif 'n' == input.downcase
         #no > quit
         exit
+    else
+        puts "I don't understand that!"
     end
 end
 
